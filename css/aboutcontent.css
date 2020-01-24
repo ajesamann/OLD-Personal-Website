@@ -1,0 +1,132 @@
+.about-container {
+  height: 1400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.paragraph-me {
+  width: 75%;
+  text-align: center;
+}
+
+.paragraph-title {
+  font-size: 1.75rem;
+  margin-bottom: 10px;
+}
+
+.divider {
+  width: 50px;
+  height: 2px;
+  margin-bottom: 30px;
+  background-color: #d1d1d1;
+}
+
+.design-skills-title,
+.coding-skills-title {
+  font-size: 1.3rem;
+  box-sizing: border-box;
+  padding: 5px 25px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  transform: translate(-50%, -50%);
+  top: 0;
+  left: 50%;
+  background-color: #1c95ff;
+  color: white;
+}
+
+.coding-item,
+.design-item {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.skill-icon {
+  margin-right: 10px;
+}
+
+.coding-skills,
+.design-skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  padding: 50px 0 40px 0;
+  border-bottom: 15px solid #eeeeee;
+  width: 80%;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+}
+
+.coding-skills {
+  margin-bottom: 85px;
+}
+
+.coding-skills:hover {
+  transform: translateY(-30px);
+}
+
+.design-skills:hover {
+  transform: translateY(-30px);
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+@media screen and (min-width: 1200px) {
+  .about-container {
+    height: 115vh;
+  }
+
+  .paragraph-me {
+    font-size: 1.3rem;
+  }
+
+  .paragraph-title {
+    font-size: 2rem;
+  }
+
+  .skills {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 75%;
+  }
+
+  .coding-skills,
+  .design-skills {
+    height: 300px;
+    width: 50%;
+  }
+
+  .coding-skills {
+    margin: 0 25px 0 0;
+  }
+
+  .design-skills {
+    margin: 0 0 0 25px;
+  }
+
+  .coding-item,
+  .design-item {
+    font-size: 1.3rem;
+  }
+
+  .design-skills-title,
+  .coding-skills-title {
+    font-size: 1.75rem;
+  }
+}
