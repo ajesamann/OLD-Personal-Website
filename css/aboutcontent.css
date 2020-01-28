@@ -1,5 +1,5 @@
 .about-container {
-  height: 1400px;
+  height: 1350px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -10,11 +10,13 @@
 .paragraph-me {
   width: 75%;
   text-align: center;
+  color: #6e6e6e;
 }
 
 .paragraph-title {
   font-size: 1.75rem;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
+  color: #1c95ff;
 }
 
 .divider {
@@ -28,7 +30,7 @@
 .coding-skills-title {
   font-size: 1.3rem;
   box-sizing: border-box;
-  padding: 5px 25px;
+  padding: 10px 30px;
   position: absolute;
   display: flex;
   justify-content: center;
@@ -45,6 +47,7 @@
 .design-item {
   margin-bottom: 10px;
   font-size: 1rem;
+  color: #6e6e6e;
 }
 
 .skill-icon {
@@ -60,7 +63,6 @@
   align-items: center;
   transition: all 0.2s ease-in-out;
   padding: 50px 0 40px 0;
-  border-bottom: 15px solid #eeeeee;
   width: 80%;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
 }
@@ -86,7 +88,7 @@
   position: relative;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
   .about-container {
     height: 115vh;
   }
@@ -127,6 +129,6 @@
 
   .design-skills-title,
   .coding-skills-title {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
 }

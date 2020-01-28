@@ -114,15 +114,44 @@ a {
   cursor: pointer;
 }
 
+.link {
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+
+.link::before {
+  transition: all 0.2s ease-in-out;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 4px;
+  background-color: white;
+  bottom: -10px;
+}
+
+.link:hover::before {
+  width: 100%;
+}
+
+@media screen and (min-width: 1000px) {
+  .menu-text {
+    font-size: 1.5rem;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .nav-links {
     flex-direction: row;
-    width: 60%;
+    width: 70%;
     justify-content: space-evenly;
   }
 
   #social-icons {
     width: 25%;
+  }
+
+  .menu-text {
+    font-size: 1.1rem;
   }
 
   .home,

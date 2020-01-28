@@ -1,9 +1,13 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Archivo&display=swap");
 
 * {
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Archivo", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -11,4 +15,21 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translate(-1000px);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+
+.slide-in-element {
+  animation: slide-in 1.4s;
+}
+
+.hidden {
+  transform: translate(-1000px);
 }

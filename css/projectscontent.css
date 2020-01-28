@@ -98,3 +98,15 @@
   color: #1c95ff;
   font-weight: bold;
 }
+
+@media screen and (min-width: 1000px) {
+  .project-technologies {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .project-technology {
+    margin: 10px 15px 0 15px;
+  }
+}
