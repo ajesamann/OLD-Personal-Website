@@ -2,6 +2,7 @@
 let dropdownBar = document.getElementById("menu-dropdown-bar");
 let menuContent = document.getElementById("menu-content");
 let menuArrow = document.getElementById("menu-arrow");
+let body = document.getElementsByTagName("BODY")[0];
 
 dropdownBar.addEventListener("click", () => {
   if (dropdownBar.classList.contains("closed-position")) {
@@ -12,6 +13,7 @@ dropdownBar.addEventListener("click", () => {
     menuContent.classList.add("show-content");
     menuArrow.classList.remove("fa-chevron-down");
     menuArrow.classList.add("fa-chevron-up");
+    body.style.overflow = "hidden";
   } else if (dropdownBar.classList.contains("open-position")) {
     dropdownBar.classList.add("closed-position");
     dropdownBar.classList.remove("open-position");
@@ -19,6 +21,7 @@ dropdownBar.addEventListener("click", () => {
     menuContent.classList.remove("show-content");
     menuArrow.classList.add("fa-chevron-down");
     menuArrow.classList.remove("fa-chevron-up");
+    body.style.overflow = "visible";
   }
 });
 
