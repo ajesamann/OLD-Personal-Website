@@ -78,6 +78,7 @@ navLinks.forEach(link => {
     menuContent.classList.remove("show-content");
     menuArrow.classList.add("fa-chevron-down");
     menuArrow.classList.remove("fa-chevron-up");
+    body.removeAttribute("style");
   });
 });
 
