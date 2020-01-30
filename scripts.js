@@ -50,9 +50,9 @@ function hideMenuBar() {
   window.onscroll = function() {
     let currentScrollPos = window.pageYOffset;
     if (dropdownBar.classList.contains("closed-position")) {
-      if (prevScrollpos > currentScrollPos) {
+      if (prevScrollpos > currentScrollPos && window.pageYOffset < 3550) {
         dropdownBar.style.top = "0";
-      } else {
+      } else if (prevScrollpos < currentScrollPos && window.pageYOffset > 100) {
         dropdownBar.style.top = "-100px";
       }
       prevScrollpos = currentScrollPos;
@@ -66,7 +66,7 @@ hideMenuBar();
 let navLinks = [
   document.getElementById("homeLink"),
   document.getElementById("aboutLink"),
-  document.getElementById("projectsLink"),
+  document.getElementById("codeProjectsLink"),
   document.getElementById("contactLink")
 ];
 
@@ -83,7 +83,7 @@ navLinks.forEach(link => {
 });
 
 //running animation on elements when they come into view
-(function() {
+(() => {
   let elements;
   let windowHeight;
 
@@ -91,6 +91,8 @@ navLinks.forEach(link => {
     elements = document.querySelectorAll(".hidden");
     windowHeight = window.innerHeight;
   }
+
+  init();
 
   function checkPosition() {
     for (let i = 0; i < elements.length; i++) {
@@ -104,9 +106,22 @@ navLinks.forEach(link => {
     }
   }
 
+  checkPosition();
+
   window.addEventListener("scroll", checkPosition);
   window.addEventListener("resize", init);
-
-  init();
-  checkPosition();
 })();
+
+//smooth-scroll to nav location
+let homeNavLink = document.getElementById("homeLink");
+let homeLocation = document.getElementById("home").getBoundingClientRect().top;
+let aboutNavLink = document.getElementById("aboutLink");
+let aboutLocation = document.getElementById("about").getBoundingClientRect()
+  .top;
+let contactNavLink = document.getElementById("contactLink");
+let contactLocation = document.getElementById("contact").getBoundingClientRect()
+  .top;
+let projectsNavLink = document.getElementById("codeProjectsLink");
+let projectsLocation = document
+  .getElementById("projects")
+  .getBoundingClientRect().top;
