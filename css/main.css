@@ -1,31 +1,20 @@
-@import url("https://fonts.googleapis.com/css?family=Archivo&display=swap");
-
 * {
   margin: 0;
   padding: 0;
-  font-family: "Archivo", sans-serif;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-color: #0f0f0f;
 }
 
-@keyframes slide-in {
-  from {
-    transform: translate(-1000px);
-  }
-  to {
-    transform: translate(0);
-  }
+a {
+  text-decoration: none;
 }
 
-.slide-in-element {
-  animation: slide-in 1.4s;
+.white {
+  color: white;
 }
 
-.hidden {
-  transform: translate(-1000px);
+.black {
+  color: #0f0f0f;
 }

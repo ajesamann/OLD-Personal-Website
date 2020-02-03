@@ -4,199 +4,256 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/body.css" />
-    <link rel="stylesheet" href="css/homecontent.css" />
-    <link rel="stylesheet" href="css/aboutcontent.css" />
-    <link rel="stylesheet" href="css/projectscontent.css" />
-    <link rel="stylesheet" href="css/contactcontent.css" />
-    <link rel="stylesheet" href="css/footercontent.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/projects.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      href="//use.fontawesome.com/releases/v5.12.0/css/all.css"
     />
-    <title>AJ Esamann | Front-End Developer</title>
+    <title>AJ Esamann | Developer & Designer</title>
   </head>
   <body>
-    <!-- Menu header -->
-    <header>
-      <div id="menu-content" class="hide-content">
-        <div class="nav-links">
-          <div id="homeLink" class="link home"><a href="#home">Home</a></div>
-          <div id="aboutLink" class="link about"><a href="#about">About</a></div>
-          <div id="codeProjectsLink" class="link projects"><a href="#projects">Code Projects</a></div>
-          <div id="designProjectsLink" class="link projects"><a href="https://ajesamann.myportfolio.com/" target="_blank">Design Portfolio</a></div>
-          <div id="contactLink" class="link contact"><a href="#contact">Contact</a></div>
-        </div>
-        <div id="social-icons">
-          <a href="https://github.com/ajesamann" target="_blank"><i class="s-icon github fab fa-github-alt"></i></a>
-          <a href="https://www.linkedin.com/in/aj-esamann-16897a193/" target="_blank"><i class="s-icon linkedin fab fa-linkedin-in"></i></a>
-          <a href="https://codepen.io/ajesamann" target="_blank"><i class="s-icon codepen fab fa-codepen"></i></a>
-        </div>
+    <!--Header-->
+    <header id="header">
+      <div class="logo-container">
+        <a href="#home"
+          ><img src="./images/logo-black.png" alt="AJ Esamann Logo" class="logo"
+        /></a>
       </div>
-      <div id="menu-dropdown-bar" class="closed-position">
-        <div class="menu-text">Menu</div>
-        <i id="menu-arrow" class="arrow fas fa-chevron-down"></i>
+      <div class="menu-icon-container">
+        <div class="menu-icon">
+          <span class="bar1"></span>
+          <span class="bar2"></span>
+          <span class="bar3"></span>
+        </div>
       </div>
     </header>
-
-    <!-- Body content container -->
-    <div class="container">
-      <!--Home content-->
-      <div id="home" class="home-container">
-        <div id="hello"></div>
-        <a href="#projects"><div id="view-work-button">View my work</div></a>
-      </div>
-      <!--About me content-->
-      <div id="about" class="about-container">
-        <div class="paragraph-me">
-          <div class="hidden paragraph-title">A little about me</div>
-          <div class="hidden paragraph-info">
-            Howdy! My name is AJ Esamann, and I'm currently located in
-            Indianapolis, IN. I have a thorough passion for developing seamless
-            user experiences utilizing techniques I have learned over the past 3
-            years. I specialize in Website Development, Web Application
-            Development, and App Development. I mainly focus on the Front-End
-            side of things but am open to Full-Stack opportunities. Reptiles,
-            video games, and movies are some of my biggest hobbies outside of
-            coding.
-          </div>
+    <div class="menu">
+      <div class="links">
+        <div id="homeLink" class="home">
+          <a class="black" href="#Home">Home</a>
         </div>
-        <span class="hidden divider"></span>
-        <div class="skills">
-          <div class="hidden coding-skills">
-            <div class="coding-skills-title">
-              <i class="skill-icon fas fa-code"></i>Coding Skills
-            </div>
-            <div class="coding-item html">HTML</div>
-            <div class="coding-item css">CSS</div>
-            <div class="coding-item sass">Sass</div>
-            <div class="coding-item javascript">JavaScript</div>
-            <div class="coding-item React">React</div>
-            <div class="coding-item react-native">React-Native</div>
-            <div class="coding-item redux">Redux</div>
-            <div class="coding-item redux">Python</div>
-          </div>
-          <div class="hidden design-skills">
-            <div class="design-skills-title">
-              <i class="skill-icon fas fa-pen-nib"></i>Design Skills
-            </div>
-            <div class="design-item photoshop">Adobe Photoshop</div>
-            <div class="design-item illustrator">Adobe Illustrator</div>
-            <div class="design-item xd">Adobe XD</div>
-            <div class="design-item after-effects">Adobe After Effects</div>
-          </div>
+        <div id="aboutLink" class="about">
+          <a class="black" href="#About">About</a>
+        </div>
+        <div id="projectsLink" class="projects">
+          <a class="black" href="#Projects">Projects</a>
+        </div>
+        <div id="contactLink" class="contact">
+          <a class="black" href="#Contact">Contact</a>
         </div>
       </div>
-      <!--Projects-->
-      <div id="projects" class="projects-container">
-        <div class="hidden projects-title">projects</div>
-        <div class="hidden project-code-info">*The code for all these projects can be found on my <a class="github-link" href="https://github.com/ajesamann" target="_blank">github</a> profile.</div>
-        <div class="hidden project p4">
-          <div class="project-title title-p4">
-            <i class="icon fas fa-shopping-bag"></i></i></i>EZEE Design Co. Website
-          </div>
-          <div class="project-technologies technologies-p4">
-            <div class="project-technology">HTML</div>
-            <div class="project-technology">CSS</div>
-            <div class="project-technology">JavaScript</div>
-          </div>
-          <div class="project-description description-p4">
-            The first website I created, a full functioning website for a freelance business I used to run.
-          </div>
-          <div class="link-p1">
-            <a
-              class="project-links"
-              href="https://ezee-design-co.netlify.com/"
-              target="_blank"
-              >Click me to view this website!</a
-            >
-          </div>
-        </div>
-        <div class="hidden project p1">
-          <div class="project-title title-p1">
-            <i class="icon fas fa-random"></i>Password Generating App
-          </div>
-          <div class="project-technologies technologies-p1">
-            <div class="project-technology">React</div>
-          </div>
-          <div class="project-description description-p1">
-            This is a simple application that allows you to generate a random
-            password, with options set by the user.
-          </div>
-          <div class="link-p1">
-            <a
-              class="project-links"
-              href="https://password-generating-app.netlify.com/"
-              target="_blank"
-              >Click me to view this app!</a
-            >
-          </div>
-        </div>
-        <div class="hidden project p2">
-          <div class="project-title title-p2">
-            <i class="icon fas fa-dumbbell"></i></i>Workout Tracker App
-          </div>
-          <div class="project-technologies technologies-p2">
-            <div class="project-technology">React</div>
-          </div>
-          <div class="project-description description-p2">
-            This application lets you create a specific workout, and add it to
-            your list of workouts. All user controlled.
-          </div>
-          <div class="link-p1">
-            <a
-              class="project-links"
-              href="https://workout-tracker-app.netlify.com/"
-              target="_blank"
-              >Click me to view this app!</a
-            >
-          </div>
-        </div>
-        <div class="hidden project p3">
-          <div class="project-title title-p3">
-            <i class="icon fas fa-shopping-bag"></i></i></i>iGrocery Mobile App
-          </div>
-          <div class="project-technologies technologies-p3">
-            <div class="project-technology">iOS App</div>
-            <div class="project-technology">React Native</div>
-            <div class="project-technology">Redux</div>
-          </div>
-          <div class="project-description description-p3">
-            A mobile application that allows you to have full control over your shopping lists, and saves data locally using Redux Persist.
-          </div>
-          <div class="link-p1">
-            <a
-              class="project-links"
-              href="https://apps.apple.com/us/app/igrocery-shopping-lists/id1496456838"
-              target="_blank"
-              >Click me to view this app!</a
-            >
-          </div>
+      <div class="icons">
+        <div class="icons-con">
+          <a class="white" href="https://github.com/ajesamann" target="_blank"
+            ><i class="github fab fa-github-alt"></i
+          ></a>
+          <a class="white" href="https://codepen.io/ajesamann" target="_blank"
+            ><i class="codepen fab fa-codepen"></i
+          ></a>
+          <a
+            class="white"
+            href="https://www.linkedin.com/in/aj-esamann-16897a193/"
+            target="_blank"
+            ><i class="linkedin fab fa-linkedin-in"></i
+          ></a>
         </div>
       </div>
-      <!--Contact me-->
-      <div id="contact" class="contact-container">
-        <div class="contact-info">
-          <div class="hidden contact-paragraph">Reach out to me!</div>
-          <div class="hidden phone"><i class="icon fas fa-mobile-alt"></i>317-448-3390</div>
-          <span class="hidden contact-divider"></span>
-          <div class="hidden email"><i class="icon fas fa-envelope"></i>aje0098@gmail.com</div>
-          <div class="hidden" id="social-icons-contact">
-            <a href="https://github.com/ajesamann" target="_blank"><i class="fab fa-github-alt"></i></a>
-            <a href="https://www.linkedin.com/in/aj-esamann-16897a193/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://codepen.io/ajesamann" target="_blank"><i class="fab fa-codepen"></i></a>
-          </div>
+    </div>
+    <!--Home Section-->
+    <div id="Home" class="home-container">
+      <div class="home-content-container">
+        <div class="hello">Hello!</div>
+        <span class="divider"></span>
+        <div class="home-paragraph">
+          My name is AJ Esamann, I am a front-end developer/designer.
         </div>
       </div>
-      <!--Footer-->
-      <div class="footer-container">
-        <div class="footer-info">&copy; 2020 AJ Esamann | Indianapolis, IN</div>
+      <a class="white" href="#about"
+        ><i class="arrow fas fa-chevron-down"></i
+      ></a>
+    </div>
+    <!--About Section-->
+    <div id="About" class="about-container">
+      <div class="about-content-container">
+        <div class="big about-me-title">A modern day super-nerd</div>
+        <span class="divider-black"></span>
+        <div class="about-me-paragraph">
+          Hello fellow human! I'm AJ, and I'm currently located in Indianapolis,
+          IN. I have a thorough passion for developing seamless user experiences
+          utilizing techniques I have learned over the past 3 years. I
+          specialize in Website Development, Web Application Development, and
+          App Development. I mainly focus on the Front-End side of things but am
+          open to Full-Stack opportunities. Reptiles, video games, and movies
+          are some of my biggest hobbies outside of coding.
+        </div>
+      </div>
+      <div class="skills-container">
+        <div class="coding-skills">
+          <div class="coding-title">Coding</div>
+          <span class="divider-black-skills"></span>
+          <div class="item html">HTML</div>
+          <div class="item css">CSS</div>
+          <div class="item SCSS">SCSS</div>
+          <div class="item javascript">JavaScript</div>
+          <div class="item react">React</div>
+          <div class="item react-native">React-Native</div>
+          <div class="item redux">Redux</div>
+          <div class="item python">Python</div>
+        </div>
+        <div class="design-skills">
+          <div class="design-title">Design</div>
+          <span class="divider-black-skills"></span>
+          <div class="item illustrator">Adobe Illustrator</div>
+          <div class="item photoshop">Adobe Photoshop</div>
+          <div class="item after-effects">Adobe After Effects</div>
+          <div class="item xd">Adobe XD</div>
+        </div>
+      </div>
+      <div class="view-my-tech-btn">
+        <div class="skills-btn-text">View my skills</div>
+        <i class="down fas fa-arrow-down"></i>
+      </div>
+      <div class="resume">
+        <div class="interested-title">Want more info?</div>
+        <div class="little-info resume-text">
+          View my resume <a id="resume-link" href="./images/AJE-Resume-V1.pdf" target="_blank">here</a>.
+        </div>
+      </div>
+    </div>
+    <!--Projects Section-->
+    <div id="Projects" class="projects-container">
+      <div class="top-projects">
+        <div class="projects-title">
+          Projects
+        </div>
+        <span class="divider-white"></span>
+        <span class="dive">dive into my mind</span>
+      </div>
+      <!--Project 1-->
+      <div class="project p1">
+        <div class="project-title">Ezee Design Co. Website</div>
+        <div class="project-description">
+          The first website I created, a full functioning website for a
+          freelance business I used to run.
+        </div>
+        <div class="tech-used">
+          <div class="tech">HTML</div>
+          <div class="tech">CSS</div>
+          <div class="tech">JavaScript</div>
+          <div class="tech">PHP</div>
+        </div>
+        <div class="view-project">
+          <a
+            class="view-proj-link"
+            href="https://ezee-design-co.netlify.com/"
+            target="_blank"
+          >
+            View this project<i
+              class="project-arrow fas fa-long-arrow-alt-right"
+            ></i
+          ></a>
+        </div>
+      </div>
+      <!--Project 2-->
+      <div class="project p2">
+        <div class="project-title">Password Generating App</div>
+        <div class="project-description">
+          This is a simple application that allows you to generate a random
+          password, with options set by the user.
+        </div>
+        <div class="tech-used">
+          <div class="tech">React</div>
+        </div>
+        <div class="view-project">
+          <a
+            class="view-proj-link"
+            href="https://password-generating-app.netlify.com/"
+            target="_blank"
+          >
+            View this project<i
+              class="project-arrow fas fa-long-arrow-alt-right"
+            ></i
+          ></a>
+        </div>
+      </div>
+      <!--Project 3-->
+      <div class="project p3">
+        <div class="project-title">iGrocery Mobile App</div>
+        <div class="project-description">
+          A mobile application that allows you to have full control over your
+          shopping lists, and saves data locally using Redux Persist.
+        </div>
+        <div class="tech-used">
+          <div class="tech">iOS App</div>
+          <div class="tech">React Native</div>
+          <div class="tech">Redux</div>
+        </div>
+        <div class="view-project">
+          <a
+            class="view-proj-link"
+            href="https://apps.apple.com/us/app/igrocery-shopping-lists/id1496456838"
+            target="_blank"
+          >
+            View this project<i
+              class="project-arrow fas fa-long-arrow-alt-right"
+            ></i
+          ></a>
+        </div>
+      </div>
+      <div class="design-port-con">
+        <div class="design">Interested in my design portfolio?</div>
+        <div class="design-port-btn">
+          <a
+          class="design-port-text"
+          href="https://ajesamann.myportfolio.com/"
+          target="_blank"
+          >
+            Go to design portfolio
+            <i class="project-arrow fas fa-long-arrow-alt-right"></i></div
+        ></a>
+      </div>
+    </div>
+    <!--Contact Section-->
+    <div id="Contact" class="contact-container">
+      <div class="contact-info">
+        <div class="contact-paragraph">Contact info</div>
+        <div class="phone">
+          <i class="icon fas fa-mobile-alt"></i>317-448-3390
+        </div>
+        <span class="contact-divider"></span>
+        <div class="email">
+          <i class="icon fas fa-envelope"></i>aje0098@gmail.com
+        </div>
+        <div id="social-icons-contact">
+          <a class="link" href="https://github.com/ajesamann" target="_blank"
+            ><i class="fab fa-github-alt"></i
+          ></a>
+          <a
+            class="link"
+            href="https://www.linkedin.com/in/aj-esamann-16897a193/"
+            target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a class="link" href="https://codepen.io/ajesamann" target="_blank"
+            ><i class="fab fa-codepen"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <!--Footer-->
+    <div class="footer-container">
+      <div class="footer-info">
+        &copy; AJ Esamann 2020 | Developer/Designer
       </div>
     </div>
 
-    <!--Javascript connector-->
-    <script src="scripts.js"></script>
+    <!--JavaScript connector-->
+    <script src="./main.js"></script>
   </body>
 </html>

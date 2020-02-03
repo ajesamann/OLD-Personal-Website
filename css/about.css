@@ -1,0 +1,177 @@
+@font-face {
+  font-family: Gravity;
+  src: url(../fonts/Gravity.ttf);
+}
+
+@font-face {
+  font-family: Gravity-Bold;
+  src: url(../fonts/Gravity-Bold.ttf);
+}
+
+.about-container {
+  padding-bottom: 75px;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+}
+
+.about-content-container {
+  width: 92%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+.resume {
+  width: 92%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+.resume-text {
+  margin-top: 10px;
+}
+
+#resume-link {
+  text-decoration: none;
+  color: #0f0f0f;
+  cursor: pointer;
+  font-family: Gravity-Bold;
+}
+
+.interested-title {
+  font-size: 3rem;
+  margin-top: 50px;
+  font-family: Gravity-Bold;
+  text-align: left;
+  color: #0f0f0f;
+}
+
+.big,
+.about-me-title {
+  font-size: 3rem;
+  margin: 40px 0 30px 0;
+  font-family: Gravity-Bold;
+  text-align: left;
+  color: #0f0f0f;
+}
+
+.divider-black {
+  width: 30px;
+  height: 3px;
+  background-color: #0f0f0f;
+  margin: 0 0 30px 0;
+}
+
+.divider-black-skills {
+  width: 30px;
+  height: 3px;
+  background-color: #0f0f0f;
+  margin: 20px 0;
+}
+
+.little-info,
+.about-me-paragraph {
+  font-size: 1.3rem;
+  font-family: Gravity;
+  text-align: left;
+  color: #0f0f0f;
+}
+
+.view-my-tech-btn {
+  box-sizing: border-box;
+  font-family: Gravity;
+  border: 2px solid #0f0f0f;
+  font-size: 1.2rem;
+  color: #0f0f0f;
+  width: 92%;
+  padding: 20px 0;
+  margin-top: 50px;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.view-my-tech-btn:hover {
+  background-color: #0f0f0f;
+  color: white;
+}
+
+.down {
+  transition: all 0.2s ease-in-out;
+  margin-left: 8px;
+  transform: rotate(0);
+}
+
+.down-open {
+  transition: all 0.2s ease-in-out;
+  margin-left: 8px;
+  transform: rotate(-180deg);
+}
+
+.skills-container {
+  width: 92%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.coding-skills,
+.design-skills {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  margin-top: 30px;
+}
+
+.design-title,
+.coding-title {
+  font-size: 1.8rem;
+  font-family: Gravity-Bold;
+  text-align: left;
+}
+
+.item {
+  font-size: 1.1rem;
+  font-family: Gravity;
+  margin-top: 5px;
+  text-align: left;
+}
+
+@media only screen and (min-width: 1200px) {
+  .coding-skills,
+  .design-skills {
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .divider-black-skills {
+    width: 3px;
+    height: 60px;
+    background-color: #0f0f0f;
+    margin: 0 20px;
+  }
+
+  .item {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #0f0f0f;
+    color: white;
+  }
+}

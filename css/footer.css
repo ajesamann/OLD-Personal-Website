@@ -1,0 +1,20 @@
+@font-face {
+  font-family: Gravity;
+  src: url(../fonts/Gravity.ttf);
+}
+
+@font-face {
+  font-family: Gravity-Bold;
+  src: url(../fonts/Gravity-Bold.ttf);
+}
+
+.footer-container {
+  font-size: 0.8rem;
+  font-family: Gravity;
+  height: 45px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f0f0f;
+}

@@ -1,0 +1,78 @@
+@font-face {
+  font-family: Gravity;
+  src: url(../fonts/Gravity.ttf);
+}
+
+@font-face {
+  font-family: Gravity-Bold;
+  src: url(../fonts/Gravity-Bold.ttf);
+}
+
+.home-container {
+  height: 100vh;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.home-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hello {
+  font-size: 2.5rem;
+  font-family: Gravity-Bold;
+}
+
+.divider {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 10px 0 20px 0;
+}
+
+.home-paragraph {
+  font-size: 1.3rem;
+  width: 85%;
+  font-family: Gravity;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 15px;
+  font-size: 2rem;
+  cursor: pointer;
+  animation: Hover 1s ease-in-out infinite;
+}
+
+@keyframes Hover {
+  0%,
+  100% {
+    transform: translate(0, 5px);
+  }
+  50% {
+    transform: translate(0, -5px);
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .hello {
+    font-size: 3rem;
+  }
+
+  .home-paragraph {
+    font-size: 1.8rem;
+  }
+
+  .arrow {
+    font-size: 2.5rem;
+  }
+}
