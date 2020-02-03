@@ -73,18 +73,16 @@
   box-sizing: border-box;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  white-space: nowrap;
 }
 
 .design-port-text {
   color: white;
 }
 
-.design-port-btn:hover > .design-port-text {
-  color: #0f0f0f;
-}
-
 .design-port-btn:hover {
   background-color: white;
+  color: #0f0f0f;
 }
 
 .divider-white {
@@ -167,6 +165,6 @@
   }
 
   .design-port-btn {
-    width: 15%;
+    width: 25%;
   }
 }
