@@ -60,15 +60,23 @@
 }
 
 #social-icons-contact {
-  width: 45%;
+  width: 75%;
   display: flex;
   font-size: 1.6rem;
   justify-content: space-between;
+  align-items: center;
   margin-top: 15px;
 }
 
 .link {
-  color: #0f0f0f;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: #0f0f0f;
+  border-radius: 100px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -94,6 +102,11 @@
 
   .link {
     color: white;
+    display: block;
+    width: auto;
+    height: auto;
+    background-color: none;
+    border-radius: 0;
   }
 
   .contact-info {

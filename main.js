@@ -19,7 +19,7 @@ hamburger.addEventListener("click", () => {
     }, 500);
     menu.classList.remove("menu");
     menu.classList.add("menu-open");
-    body.style.overflow = "hidden";
+    body.style.overflowY = "hidden";
     header.style.backgroundColor = "transparent";
     headerLogo.style.opacity = "0";
     bar1.classList.remove("bar1");
