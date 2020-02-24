@@ -67,13 +67,10 @@
   font-family: Gravity;
   font-size: 1rem;
   margin-top: 40px;
-  width: 100%;
   border: 2px solid white;
-  padding: 15px 0 15px 15px;
-  box-sizing: border-box;
+  padding: 15px 15px 15px 15px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  white-space: nowrap;
 }
 
 .design-port-text {
