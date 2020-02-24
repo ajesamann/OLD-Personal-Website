@@ -73,10 +73,6 @@
   transition: all 0.3s ease-in-out;
 }
 
-.design-port-text {
-  color: white;
-}
-
 .design-port-btn:hover {
   background-color: white;
   color: #0f0f0f;
